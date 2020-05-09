@@ -1,0 +1,76 @@
+<div class="item">
+        <div>Avatar URL</div>
+        <div>
+            <input type="url" name="avatar_url" placeholder="http://" value="{{instructor.avatar_url}}">
+        </div>
+    </div>
+
+    
+    <div class="item">
+        <div>Instrutor</div>
+        <div>
+            <input type="text" name="name" placeholder="Nome instrutor" value="{{instructor.name}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Data de Nascimento</div>
+        <div>
+            <input type="date" name="birth" value="{{instructor.birth}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Sexo</div>
+        <div>
+            <span>
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    value="M" 
+                    {% if instructor.gender=='M' %}
+                        checked
+                    {% endif %}>Masculino
+            </span>
+            <span>
+                <input 
+                type="radio" 
+                name="gender" 
+                value="F" 
+                {% if instructor.gender=='F' %}
+                    checked
+                {% endif %}>Feminino
+            </span>
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Área de atuação</div>
+            <div>
+                <input type="text" name="services" placeholder="Separar as atividades por virgula" value="{{instructor.services}}">
+            </div>
+    </div>
+
+    <div class="item">
+        <div>Endereço</div>
+        <div>
+            <input type="text" name="address" placeholder="Endereço" value="{{instructor.address}}">
+        </div>
+    </div>
+    
+    <div class="item">
+        <div>Telefone</div>
+        <div>
+            <input type="tel" name="phone" placeholder="Tel" value="{{instructor.phone}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Documentos</div>
+        <div class="documents">
+            <input type="number" name="rg" placeholder="RG" value="{{instructor.rg}}">
+            <input type="number" name="cpf" placeholder="CPF" value="{{instructor.cpf}}">
+        </div>
+    </div>
+
+    <button type="submit">Salvar</button>

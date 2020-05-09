@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+        {% block head %}
+            <title>PF Surf School</title>
+        {% endblock %}
+
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/"></a>
+                <a href="/instructors">Instrutores</a>
+                <a href="/members">Alunos</a>
+                <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcStLgtshuN1XcqICGiE7qc_yDqvlDG3RMJUVh-d8nz0F2vLKFCe&usqp=CAU" alt="Logo PF Surf Scool">
+            </div>
+            <div class="logout" onclick="logout()">
+                <h5>Sair</h5>
+                <img src="/seta.png" alt="">
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+            <script src="/scripts.js"></script>
+    </body>
+</html>
